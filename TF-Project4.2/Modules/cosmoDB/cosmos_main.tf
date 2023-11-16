@@ -1,7 +1,11 @@
+provider "azurerm" {
+  features {}
+}
+
 resource "azurerm_cosmosdb_account" "db" {
-  name                = "techslate-ade-cosmosdb"
+  name                = "techslate-ade-cosmosdb3"
   location            = var.location
-  resource_group_name = var.rg_name
+  resource_group_name = "rg_name"
   offer_type          = "Standard"
   kind                = "MongoDB"
 
